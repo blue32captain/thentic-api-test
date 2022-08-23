@@ -269,7 +269,12 @@ export default function Home() {
       {contracts
         .filter((contract) => contract.status === "pending")
         .map((contract, index) => (
-          <a href={contract.transaction_url} target="_blank" key={index}>
+          <a
+            href={contract.transaction_url}
+            target="_blank"
+            key={index}
+            rel="noreferrer"
+          >
             <p>{contract.name}</p>
           </a>
         ))}

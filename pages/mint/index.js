@@ -69,7 +69,7 @@ export default function Mint() {
   return (
     <div>
       {transactionUrl ? (
-        <a href={transactionUrl} target="_blank">
+        <a href={transactionUrl} target="_blank" rel="noreferrer">
           Please go to this link for minting NFT
         </a>
       ) : (
